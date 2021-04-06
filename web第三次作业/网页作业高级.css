@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#example1 {
+  background: url(/i/photo/flower.gif) right bottom no-repeat, url(/i/paper.jpg) left top repeat;
+  padding: 15px;
+}
+
+#rcorners2 {
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px; 
+  width: 100px;
+  height: 15px;  
+}
+
+div.test {
+  white-space: nowrap; 
+  width: 200px; 
+  overflow: hidden; 
+  border: 1px solid #000000;
+}
+
+div.test:hover {
+  overflow: visible;
+}
+</style>
+</head>
+<body>
+
+<div id="example1">
+  <p id="rcorners2">网页作业
+	<div class="test" style="text-overflow:ellipsis;">这里有一些无法容纳在框中的长文本		</div>
+	<br>
+	<div class="test" style="text-overflow:clip;">这里有一些无法容纳在框中的长文本</div>
+ 
+ </p>
+</div>
+
+</body>
+</html>
